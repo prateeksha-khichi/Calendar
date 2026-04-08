@@ -18,6 +18,17 @@
   }
 }
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Spiral Binding */
 .spiralBinding {
   display: flex;
@@ -231,7 +242,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  animation: slideDown 0.4s easeOut;
+  animation: slideDown 0.4s ease-out;
 }
 
 .rangeDates {
@@ -470,7 +481,7 @@
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%) translateY(0);
-  background: white;
+  background: #ffffff;
   color: var(--charcoal);
   padding: 4px 10px;
   border: 1px solid #eee;
@@ -535,7 +546,7 @@
 
   .leftPanel {
     border-right: none;
-    border-bottom: 1px dashed #d1ccd0;
+    border-bottom: 1px dashed var(--border-subtle);
     order: 2;
   }
 
